@@ -46,18 +46,14 @@ const editDataSave=()=>{
       <>
         <tr>
           <td> {sno} </td>
-          <td> 
-            
-            {key.status? 
-            <span style={{color:'red', textDecoration:'line-through'}} > 
-            {key.work}
-            </span>    : 
-            <span style={{color:'black', textDecoration:'none'}} > 
-            {key.work}
-            </span>  }
 
-            
-            
+          <td> 
+            { 
+            key.status? 
+            <span style={{color:'red', textDecoration:'line-through'}} >{key.work}</span>   
+             : 
+            <span style={{color:'black', textDecoration:'none'}} >{key.work}</span> 
+             }
             </td>
           <td> 
 
@@ -73,7 +69,6 @@ const editDataSave=()=>{
 
           </td>
           <td>
-
               <button onClick={()=>{editData(key.id, key.work)}}> Edit</button>
           </td>
         </tr>
