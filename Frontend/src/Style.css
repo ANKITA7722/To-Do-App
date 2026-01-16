@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  /* Background */
+  .page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #3b4cb8, #6a1b9a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Card */
+  .todo-card {
+    background: #fff;
+    width: 360px;
+    padding: 22px;
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Heading */
+  .todo-card h2 {
+    /* text-align: center; */
+    margin-bottom: 16px;
+    color: #333;
+  }
+  
+  /* Form */
+  .todo-form {
+    
+    display: flex;
+    margin-bottom: 18px;
+  }
+  
+  .todo-form input {
+    background-color: rgb(240, 239, 239);
+    flex: 1;
+    padding: 10px 14px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    outline: none;
+    
+  }
+  
+  .todo-form button {
+    background: #ff7043;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: -50px;
+  }
+  
+  /* List */
+  .todo-list {
+    list-style: none;
+  }
+  
+  /* Item */
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .todo-item label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+ /* ===== Circle Checkbox ===== */
+.circle-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ff7043;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+  }
+  
+  /* Checked state */
+  .circle-checkbox:checked {
+    background-color: #ff7043;
+  }
+  
+  /* Inner dot */
+  .circle-checkbox:checked::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  /* Completed */
+  .completed {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  /* Actions */
+  .actions button {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 6px;
+    color: #f5440d;
+  }
+  
